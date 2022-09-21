@@ -33,7 +33,16 @@ class block_completedcourse extends block_base {
 
     public function get_content() {
         global $USER, $DB;
-        
+
+        $id = optional_param('id', 0, PARAM_INT);
+
+        // Load user.
+        if ($id) {
+            $user = $DB->get_record('user', array('id' => $id), '*', MUST_EXIST);
+        } else {
+            $user = $USER;
+        }
+
         if ($this->content !== null) {
             return $this->content;
         }
@@ -47,8 +56,8 @@ class block_completedcourse extends block_base {
         JOIN {course} c on cc.course = c.id
         WHERE USERID = :userid AND timecompleted IS NOT NULL 
         ORDER BY timecompleted';
-        
-        $completedcourse = $DB->get_records_sql($sql, array('userid' => $USER->id));
+
+        $completedcourse = $DB->get_records_sql($sql, array('userid' => $user->id));
         if (empty($completedcourse)){
             $this->content->text = get_string('nocompletedcourse', 'block_completedcourse');
             return $this->content;
@@ -57,13 +66,13 @@ class block_completedcourse extends block_base {
         $table = new html_table();
         $table->width = '100%';
         $table->attributes = array('style'=>'font-size: 90%;', 'class'=>'');
-        
+
         //header
         $row = new html_table_row();        
         $row->cells[0] = get_string('no', 'block_completedcourse');
         $row->cells[1] = get_string('course', 'block_completedcourse');
         $rows[] = $row;
-        
+
         //render data
         $no = 1;
         foreach ($completedcourse as $c){
@@ -79,7 +88,7 @@ class block_completedcourse extends block_base {
             $rows[] = $row;
             $no++;
         }
-        
+
         $table->data = $rows;
         $this->content->text .= html_writer::table($table);
         // $this->content->footer = html_writer::empty_tag('br');
