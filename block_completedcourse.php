@@ -71,6 +71,7 @@ class block_completedcourse extends block_base {
         $row = new html_table_row();        
         $row->cells[0] = get_string('no', 'block_completedcourse');
         $row->cells[1] = get_string('course', 'block_completedcourse');
+        $row->cells[2] = get_string('completedon', 'block_completedcourse');
         $rows[] = $row;
 
         //render data
@@ -85,6 +86,7 @@ class block_completedcourse extends block_base {
                                 ['target'=>'_blank']
                             ),
                             ['class'=>'coursename']);
+            $row->cells[2] = date('d F Y', $c->timecompleted);
             $rows[] = $row;
             $no++;
         }
