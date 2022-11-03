@@ -54,7 +54,7 @@ class block_completedcourse extends block_base {
         //Get data
         $sql = 'SELECT *, c.id as courseid FROM {course_completions} cc
         JOIN {course} c on cc.course = c.id
-        WHERE USERID = :userid AND timecompleted IS NOT NULL 
+        WHERE userid = :userid AND timecompleted IS NOT NULL 
         ORDER BY timecompleted';
 
         $completedcourse = $DB->get_records_sql($sql, array('userid' => $user->id));
