@@ -82,7 +82,7 @@ class block_completedcourse extends block_base {
             $row->cells[1] = html_writer::tag('span',
                             html_writer::link( // Course shortname link.
                                 new moodle_url('/course/view.php',['id' => $c->courseid]),
-                                $c->shortname,
+                                format_text($c->shortname, FORMAT_PLAIN),
                                 ['target'=>'_blank']
                             ),
                             ['class'=>'coursename']);
