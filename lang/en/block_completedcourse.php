@@ -24,10 +24,10 @@
 
 $string['pluginname'] = 'Completed Course plugin';
 $string['completedcourse'] = 'Completed Course';
-$string['nocompletedcourse'] = 'No Completed Course';
+$string['nocompletedcourse'] = 'No completed course';
 $string['no'] = 'No';
 $string['course'] = 'Course';
-$string['completedon'] = 'Completed On';
+$string['completedon'] = 'Completed on';
 $string['completedcourse:addinstance'] = 'Add a new course/site summary block';
 $string['completedcourse:myaddinstance'] = 'Add a new simple HTML block to the My Moodle page';
 $string['privacy:metadata'] = 'The Completed Course block only shows information about courses and does not store data itself.';
