@@ -86,7 +86,7 @@ class block_completedcourse extends block_base {
                                 ['target'=>'_blank']
                             ),
                             ['class'=>'coursename']);
-            $row->cells[2] = date('d F Y', $c->timecompleted);
+            $row->cells[2] = userdate($c->timecompleted, get_string('strftimedate', 'core_langconfig'));
             $rows[] = $row;
             $no++;
         }
