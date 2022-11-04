@@ -39,12 +39,13 @@ class block_completedcourse extends block_base {
         }
 
         $id = optional_param('id', 0, PARAM_INT);
-
+        $user = $USER;
+        
         // Load user.
-        if ($id) {
+        if (is_siteadmin() && $id){
             $user = $DB->get_record('user', array('id' => $id), '*', MUST_EXIST);
-        } else {
-            $user = $USER;
+        } else if ($id){
+            return;
         }
 
         $this->content         =  new stdClass;
