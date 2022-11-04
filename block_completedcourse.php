@@ -34,6 +34,10 @@ class block_completedcourse extends block_base {
     public function get_content() {
         global $USER, $DB;
 
+        if ($this->content !== null) {
+            return $this->content;
+        }
+
         $id = optional_param('id', 0, PARAM_INT);
 
         // Load user.
@@ -41,10 +45,6 @@ class block_completedcourse extends block_base {
             $user = $DB->get_record('user', array('id' => $id), '*', MUST_EXIST);
         } else {
             $user = $USER;
-        }
-
-        if ($this->content !== null) {
-            return $this->content;
         }
 
         $this->content         =  new stdClass;
