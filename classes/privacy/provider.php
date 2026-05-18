@@ -19,6 +19,8 @@
  *
  * @package    block_completedcourse
  * @copyright  2022 Tengku Alauddin <din@pukunui.com>
+ * @author     Vinny Stocker <vinny@pukunui.com>
+ * @copyright  2026 Pukunui Malaysia
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -30,6 +32,8 @@ defined('MOODLE_INTERNAL') || die();
  * Privacy Subsystem for block_completedcourse implementing null_provider.
  *
  * @copyright  2022 Tengku Alauddin <din@pukunui.com>
+ * @author     Vinny Stocker <vinny@pukunui.com>
+ * @copyright  2026 Pukunui Malaysia
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class provider implements \core_privacy\local\metadata\null_provider {

@@ -17,8 +17,10 @@
 /**
  * Completed course block
  *
- * @package    block_course_summary
+ * @package    block_completedcourse
  * @copyright  2022 Tengku Alauddin <din@pukunui.com>
+ * @author     Vinny Stocker <vinny@pukunui.com>
+ * @copyright  2026 Pukunui Malaysia
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
