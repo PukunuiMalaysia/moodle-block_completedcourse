@@ -24,12 +24,34 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'Completed Course plugin';
-$string['completedcourse'] = 'Completed Course';
-$string['nocompletedcourse'] = 'No completed course';
+$string['pluginname'] = 'Completed Courses';
+$string['completedcourse'] = 'Completed Courses';
+$string['nocompletedcourse'] = 'No completed courses';
 $string['no'] = 'No';
 $string['course'] = 'Course';
+$string['category'] = 'Category';
 $string['completedon'] = 'Completed on';
+$string['grade'] = 'Grade';
+$string['notavailable'] = 'N/A';
+$string['blocksettings'] = 'Completed course settings';
+$string['displayname'] = 'Course name display';
+$string['display_shortname'] = 'Short name';
+$string['display_fullname'] = 'Full name';
+$string['display_both'] = 'Full name and short name';
+$string['sortdirection'] = 'Completion date order';
+$string['sort_desc'] = 'Newest first';
+$string['sort_asc'] = 'Oldest first';
+$string['rowlimit'] = 'Rows per page';
+$string['allcategories'] = 'All categories';
+$string['categoryfilter'] = 'Category filter';
+$string['dateformat'] = 'Date format';
+$string['showcategory'] = 'Show category';
+$string['showgrade'] = 'Show grade';
+$string['showhidden'] = 'Include hidden courses';
+$string['opennewtab'] = 'Open course links in a new tab';
+$string['exportcsv'] = 'Export CSV';
 $string['completedcourse:addinstance'] = 'Add a new course/site summary block';
 $string['completedcourse:myaddinstance'] = 'Add a new simple HTML block to the My Moodle page';
-$string['privacy:metadata'] = 'The Completed Course block only shows information about courses and does not store data itself.';
+$string['completedcourse:viewown'] = 'View own completed courses';
+$string['completedcourse:export'] = 'Export completed courses';
+$string['privacy:metadata'] = 'The Completed Courses block only shows information about courses and does not store data itself.';

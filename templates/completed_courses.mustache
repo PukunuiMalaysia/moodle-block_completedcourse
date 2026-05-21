@@ -1,0 +1,49 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template block_completedcourse/completed_courses
+
+    Completed courses list.
+
+    @package    block_completedcourse
+    @author     Vinny Stocker <vinny@pukunui.com>
+    @copyright  2026 Pukunui Malaysia
+    @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+}}
+<div class="block_completedcourse">
+    <ol class="list-unstyled mb-3">
+        {{#rows}}
+            <li class="border-bottom py-2">
+                <a class="block_completedcourse-breakable d-block" href="{{courseurl}}" target="{{linktarget}}">
+                    <strong>{{{coursenamehtml}}}</strong>
+                </a>
+                <div class="block_completedcourse-breakable small text-muted mt-1">
+                    {{completedon}}
+                    {{#showcategory}}
+                        &middot; {{categoryname}}
+                    {{/showcategory}}
+                    {{#showgrade}}
+                        &middot; {{#str}} grade, block_completedcourse {{/str}}: {{grade}}
+                    {{/showgrade}}
+                </div>
+            </li>
+        {{/rows}}
+    </ol>
+    {{#canexport}}
+        <p><a class="btn btn-secondary btn-sm" href="{{exporturl}}">{{#str}} exportcsv, block_completedcourse {{/str}}</a></p>
+    {{/canexport}}
+</div>

@@ -1,0 +1,6 @@
+.block_completedcourse .block_completedcourse-breakable {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
