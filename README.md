@@ -21,6 +21,4 @@ The completed courses block displays the current user's completed Moodle courses
 
 ## Installation
 
-Install this repository as `blocks/completedcourse`, then run the standard Moodle upgrade process.
-
-No Composer, npm, or build step is required.
+Install the plugin using Moodle's standard plugin installation process.
