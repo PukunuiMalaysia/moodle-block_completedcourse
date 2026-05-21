@@ -1,6 +1,6 @@
-## Completed Courses block
+## Completed courses block
 
-The Completed Courses block displays the current user's completed Moodle courses in a compact dashboard block.
+The completed courses block displays the current user's completed Moodle courses in a compact dashboard block.
 
 ## Author And Licence
 

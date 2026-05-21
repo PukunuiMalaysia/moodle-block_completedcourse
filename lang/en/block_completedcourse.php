@@ -24,8 +24,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'Completed Courses';
-$string['completedcourse'] = 'Completed Courses';
+$string['pluginname'] = 'Completed courses';
+$string['completedcourse'] = 'Completed courses';
 $string['nocompletedcourse'] = 'No completed courses';
 $string['no'] = 'No';
 $string['course'] = 'Course';
@@ -50,8 +50,8 @@ $string['showgrade'] = 'Show grade';
 $string['showhidden'] = 'Include hidden courses';
 $string['opennewtab'] = 'Open course links in a new tab';
 $string['exportcsv'] = 'Export CSV';
-$string['completedcourse:addinstance'] = 'Add a new course/site summary block';
-$string['completedcourse:myaddinstance'] = 'Add a new simple HTML block to the My Moodle page';
+$string['completedcourse:addinstance'] = 'Add a new completed courses block';
+$string['completedcourse:myaddinstance'] = 'Add a new completed courses block to the dashboard';
 $string['completedcourse:viewown'] = 'View own completed courses';
 $string['completedcourse:export'] = 'Export completed courses';
-$string['privacy:metadata'] = 'The Completed Courses block only shows information about courses and does not store data itself.';
+$string['privacy:metadata'] = 'The completed courses block only shows information about courses and does not store data itself.';
